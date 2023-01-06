@@ -1,0 +1,212 @@
+body {
+  font-family: "ButlerRegular";
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0.8em;
+}
+
+.hero-section {
+  height: 90vh;
+  background-image: /* linear-gradient(to right, rgba(0, 0, 0, 0.733), rgba(119, 119, 119, 0.753)),*/ url("../images/Hero\ Landing\ Page.jpg"); 
+  background-size: cover;
+  background-position: top;
+}
+
+.content-section1 {
+  background-image: url("../images/1920x1080p1-min.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.content-section2 {
+  background-image: url("../images/1920x1080p2-min.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#mapSection {
+  background-image: url("../images/1920x1080map-min.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.detailImg-1 {
+  background-image: url("../images/LandingPage1Landing\ Page\ Image.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 400px !important;
+}
+
+.detailImg-2 {
+  background-image: url("../images/LandingPage2Landing\ Page\ Image.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 400px !important;
+}
+
+.aminitiesSection {
+  background-image: url("../images/1920x1080amenities-min.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.Details-section {
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+.border-gradient {
+  border: 2px solid;
+  border-image:  linear-gradient(90deg, rgba(128,169,150,1) 0%, rgba(21,15,0,1) 73%, rgba(0,212,255,1) 100%) 1 /1;
+}
+
+.gradient-border-buttom {
+  border-bottom: 1px solid;
+  border-image: linear-gradient(90deg, rgba(128,169,150,1) 0%, rgba(21,15,0,1) 73%, rgba(0,212,255,1) 100%) 1 /1;
+}
+
+.content-section {
+  background-image: url("../images/Black_and_gold_marble_texture.jpg");
+  background-size: cover;
+}
+
+.Features {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/golden-monstera-leaves-background-design-resource.jpeg");
+  background-size: cover;
+}
+
+.table-contianer {
+  background-color: #00000000;
+}
+.card.swiper-slide {
+  width: 950px !important;
+}
+
+.container-swiper {
+  max-width: 100%;
+  width: 100%;
+  padding-bottom: 40px;
+  padding-bottom: 40px;
+}
+.slide-container {
+  margin: 0 auto;
+  overflow: hidden;
+}
+.swiper-container {
+  width: 100%;
+  height: auto;
+}
+.swiper-slide {
+  width: auto;
+  height: auto;
+}
+.swiper-container img {
+  width: 100%;
+  height: auto;
+}
+.card {
+  background: #fff;
+  border-radius: 8px;
+}
+.card .image-box {
+  height: 75vh;
+}
+.card .image-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 48px;
+}
+
+/* .card .image-box img {
+background-image: linear-gradient(to right, #6EAAEE, #EEA429);
+padding: 5px;
+border-radius: 5px;
+} */
+
+/* slider-nav-styles */
+/* .swiper-navBtn {
+    color: #000;
+    height: 40px;
+    width: 40px;
+    background: #fff;
+    border-radius: 50%;
+  }
+  .swiper-navBtn::before,
+  .swiper-navBtn::after {
+    font-size: 18px;
+  } */
+
+.swiper-pagination-bullet {
+  background-color: #fff;
+}
+
+.gradient-border-bg {
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(90deg, rgba(128,169,150,1) 0%, rgba(21,15,0,1) 73%, rgba(0,212,255,1) 100%) border-box;
+  border: 2px solid transparent;
+  border-radius: 50px;
+}
+
+.image-box {
+  border-radius: 50px;
+}
+
+.image-slider {
+  background-image: url("../images/1920x1080gallery-min.jpg");
+  background-size: cover;
+}
+
+.price-plan {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/1920x1080paymentplan-min.jpg");
+  background-size: cover;
+}
+
+.platform{
+  position: relative;
+  transition:right 0.3s;
+}
+.body{background-color:white !important;}
+
+@media screen and (max-width: 768px) {
+  .swiper-navBtn {
+    display: none;
+  }
+
+  .card .image-box {
+    height: 200px;
+  }
+
+  .card .image-box img {
+    background-size: cover;
+  }
+
+  .card.swiper-slide {
+    max-width: 50% !important;
+  }
+}
+
+/* Video player */
+
+.video {
+  width: 100%;
+  border: 1px solid black;
+}
+.wrapper{
+  display:table;
+  width:auto;
+  position:relative;
+  width:50%;
+}
+.playpause {
+  background-image:url(http://png-4.findicons.com/files/icons/2315/default_icon/256/media_play_pause_resume.png);
+  background-repeat:no-repeat;
+  width:50%;
+  height:50%;
+  position:absolute;
+  left:0%;
+  right:0%;
+  top:0%;
+  bottom:0%;
+  margin:auto;
+  background-size:contain;
+  background-position: center;
+}

@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/butler" type="text/css" />
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QNN8WCWDWP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QNN8WCWDWP');
+</script>
+
+    <style>
+      dialog[open] {
+        animation: appear 0.15s cubic-bezier(0, 1.8, 1, 1.8);
+      }
+
+      dialog::backdrop {
+        background: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(54, 54, 54, 0.5));
+        backdrop-filter: blur(3px);
+      }
+
+      @keyframes appear {
+        from {
+          opacity: 0;
+          transform: translateX(-3rem);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+    </style>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body>
+
+
+
+
+    <!-- Navigation -->
+    <div class="bg-black sticky top-0 z-50">
+      <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+        <div class="relative flex items-center justify-between">
+          <a href="/" aria-label="Company" title="Company" class="inline-flex items-center">
+            <svg class="w-20 text-teal-accent-400" viewBox="0 0 1617 321" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+                <path
+                  d="M234.9,288.4 L230.1,320.2 L0.5,320.2 C10,298.2 9.4,285.8 9.4,269.9 L9.4,51.3 C9.4,35.9 10,22.4 0.5,1 L69.3,1 L224.5,1 L224.9,33.4 C220.7,31.7 217.3,30.2 214.2,28.8 C205.9,25.7 195.4,22.8 184.5,22.9 C167.1,22.9 94.1,22.9 61.7,22.9 L61.7,147.9 L205.8,147.9 L198.7,172.5 L61.7,172.5 L61.7,297.6 C88.2,297.6 172.9,297.6 191.6,297.6 C213.5,298 235.3,285.6 235.3,285.6 L234.7,288.3 C234.7,288.4 234.8,288.4 234.9,288.4 Z M580.5,320.2 C583.6,304.5 583.6,282.3 581.1,264.2 L560.7,113.8 L449.3,320.1 L428.1,320.1 L314.9,104.5 L292.9,267.5 C290.5,286.3 289.8,310.1 291.8,320.2 L252,320.2 C259.7,303.9 261.6,296.8 265.2,270 L301.2,1 L319.5,1 L451.6,252 L583.6,1 L597.4,1 L634.6,269.4 C638.3,296.1 641.1,303.8 648.5,320.2 L580.5,320.2 Z M915.8,320.2 L862.8,203.3 L756.2,203.3 L703.9,320.2 L699.4,320.2 L662.5,320.2 L662.3,320.2 C675.5,303.8 680,296.2 689.3,275.8 L812.9,1 L826.8,1 L948.4,268.1 C961.4,294.2 967.5,302.3 986.1,320.2 L915.8,320.2 Z M1249.3,320.2 L1196.3,203.3 L1089.7,203.3 L1037.4,320.2 L1033,320.2 L996,320.2 L995.8,320.2 C1009,303.8 1013.5,296.2 1022.8,275.8 L1146.4,1 L1160.3,1 L1282,268.1 C1295,294.2 1301.1,302.3 1319.7,320.2 L1249.3,320.2 Z M1551.5,320.4 C1519.6,291.3 1478.3,252.7 1426.6,191.5 C1411.8,174.2 1401.4,172 1394.7,171.6 L1394.7,269.9 C1394.7,285.7 1394.7,298.2 1403.7,320.2 L1333.5,320.2 C1343,298.2 1342.4,285.8 1342.4,269.9 L1342.4,51.1 C1342.4,35.7 1343,22.2 1333.5,0.8 L1402.3,0.8 C1449.3,0.8 1560.4,-3.4 1560.4,88.4 C1560.4,136.9 1521.9,163 1476.7,169.6 L1463.3,170.9 C1463.3,170.9 1609.9,314.2 1616.2,320.4 L1551.5,320.4 Z M1468.4,151.3 L1468.3,151.4 C1497.9,140.2 1507.9,112.1 1506.9,88.3 C1505.8,65.4 1495.5,15.6 1394.8,19.6 L1394.8,155.7 C1394.8,155.7 1451.2,158.8 1467,151.9 C1467.9,151.5 1468.4,151.3 1468.4,151.3 Z M1099.9,181 L1186,181 L1142.6,85.7 L1099.9,181 Z M766.5,181 L852.6,181 L809.2,85.7 L766.5,181 Z"
+                  id="Shape"
+                  fill="#fff"
+                  fill-rule="nonzero"
+                ></path>
+              </g>
+            </svg>
+          </a>
+          <div class="flex justify-between items-center">
+            <ul class="flex justify-between items-center hidden space-x-8 lg:flex">
+              <li>
+                <a href="/" aria-label="Our product" title="Our product" class="font-medium text-xl tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Location</a>
+              </li>
+              <li>
+                <a href="/" aria-label="Our product" title="Our product" class="font-medium text-xl tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Amenities</a>
+              </li>
+              <li>
+                <a href="/" aria-label="Product pricing" title="Product pricing" class="font-medium text-xl tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Price</a>
+              </li>
+            </ul>
+
+            <ul class="flex items-center hidden space-x-8 lg:flex">
+              <li class="ml-10">
+                <button onclick="document.getElementById('myModal').showModal()" href="/" class="bg-[#E0206D] inline-flex items-center justify-center h-12 px-10 font-medium tracking-wide text-white transition duration-200 rounded-full shadow-md hover:bg-opacity-50 focus:shadow-outline focus:outline-none" aria-label="Sign up" title="Sign up">ENQUIRE NOW</button>
+              </li>
+            </ul>
+          </div>
+
+          <dialog id="myModal" class="bg-black text-white rounded-md shadow-2xl shadow-gray-600 ">
+            <div class="flex flex-col w-full h-auto">
+              <!-- Header -->
+              <div class="flex w-full h-auto justify-center items-center">
+                <div class="flex w-10/12 h-auto py-3 justify-center items-center text-2xl font-bold tracking-wide">ENQUIRE NOW</div>
+                <div onclick="document.getElementById('myModal').close();" class="flex w-1/12 h-auto justify-center cursor-pointer">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                  </svg>
+                </div>
+                <!--Header End-->
+              </div>
+              <!-- Modal Content-->
+              <div class="flex w-full h-auto py-10 px-2 justify-center items-center bg-black rounded text-center text-gray-500">
+                <div class="mt-5">
+                  <form target="_blank" action="https://formsubmit.co/keymaxmarketing107@gmail.com" method="POST">
+                    <input type="hidden" name="_captcha" value="false" />
+                    <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+                    <div class="grid gap-6 mb-6 lg:grid-cols-2">
+                      <div class="col"><input type="text" name="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"" placeholder="Full Name" required></div>
+                      <div class="col"><input type="email" name="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"" placeholder="Email Address" required></div>
+                      <div class="col"><input type="text" name="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"" placeholder="Phone" required></div>
+                      <div class="col"><input type="text" name="city" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"" placeholder="city" required></div>
+                    </div>
+
+                    <div class="mb-6">
+                      <textarea placeholder="Your Message" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" name="message" rows="10" required></textarea>
+                    </div>
+                    <button type="submit" class="text-white bg-[#E0206D] hover:bg-opacity-50 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+                  </form>
+                </div>
+              </div>
+              <!-- End of Modal Content-->
+            </div>
+          </dialog>
+          <!-- Mobile menu -->
+          <div class="lg:hidden">
+            <button aria-label="Open Menu" title="Open Menu" class="mobileBtn p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline">
+              <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"></path>
+                <path fill="currentColor" d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z"></path>
+                <path fill="currentColor" d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"></path>
+              </svg>
+            </button>
+            <!-- Mobile menu dropdown  -->
+            <div class="z-20 mobileDropdown hidden absolute top-0 left-0 w-full">
+              <div class="p-5 bg-white border rounded shadow-sm">
+                <div class="flex items-center justify-between mb-4">
+                  <div>
+                    <a href="/" aria-label="Company" title="Company" class="inline-flex items-center">
+                      <img class="h-6" src="https://properties.emaar.com/wp-content/themes/emaar/inc/assets/images/emaar-logo.svg" alt="" />
+                    </a>
+                  </div>
+                  <div>
+                    <button aria-label="Close Menu" title="Close Menu" class="closeMenu p-2 -mt-2 -mr-2 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+                      <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M19.7,4.3c-0.4-0.4-1-0.4-1.4,0L12,10.6L5.7,4.3c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l6.3,6.3l-6.3,6.3 c-0.4,0.4-0.4,1,0,1.4C4.5,19.9,4.7,20,5,20s0.5-0.1,0.7-0.3l6.3-6.3l6.3,6.3c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3 c0.4-0.4,0.4-1,0-1.4L13.4,12l6.3-6.3C20.1,5.3,20.1,4.7,19.7,4.3z"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <nav>
+                  <ul class="space-y-4">
+                    <li>
+                      <a href="/" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Location</a>
+                    </li>
+                    <li>
+                      <a href="/" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Amenities</a>
+                    </li>
+                    <li>
+                      <a href="/" aria-label="About us" title="About us" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Price</a>
+                    </li>
+                    <li>
+                      <button onclick="document.getElementById('myModal').showModal()" href="/" class="bg-[#E0206D] inline-flex items-center justify-center h-12 px-10 font-medium tracking-wide text-white transition duration-200 rounded-full shadow-md hover:bg-opacity-50 focus:shadow-outline focus:outline-none" aria-label="Sign up" title="Sign up">ENQUIRE NOW</button>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- hero section -->
+    <section class="hero-section bg-white header p-20">
+      <div class="flex flex-col justify-end h-4/5">
+        <!-- <h1 class="max-w-5xl text-2xl font-bold leading-none tracking-normal text-gray-100 md:text-6xl lg:text-7xl lg:max-w-8xl">
+          Long headline to turn <br class="hidden lg:block" />
+          your visitors into users
+        </h1> -->
+        <div class="flex md:justify-center md:items-center  w-full max-w-2xl gap-2 mx-auto mt-12 flex-col md:flex-row">
+          <div class="justify-items-stretch flex-1 mt-3 sm:mt-0  border-gradient">
+            <h1 class="block md:px-6 md:py-10 px-5 py-6 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-black bg-opacity-80 lg:px-10 tracking-tight focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 text-xl md:text-2xl">Easy 80/20<br/> Payment Plan</h1>
+          </div>
+
+          <div class="justify-items-stretch flex-1 mt-3 sm:mt-0 border-gradient">
+            <h1 class="block md:px-6 md:py-10 px-5 py-6 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-black bg-opacity-80 lg:px-10 tracking-tight focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 text-xl md:text-2xl">Handover <br/>in Q3 2026</h1>
+          </div>
+
+          <div class="mt-3 sm:mt-0 border-gradient">
+            <h1 class="block md:px-6 md:py-10 px-5 py-6 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-black bg-opacity-80 lg:px-10 tracking-tight focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 text-xl md:text-2xl">25 Minutes<br/> to DXB Airport</h1>
+          </div>
+        </div>
+       
+
+
+        
+      </div>
+      
+    </section>
+
+
+    <!-- Details -->
+    <section class="content-section1">
+      <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div class="grid gap-x-0 gap-y-2 lg:gap-x-5 lg:gap-y-0 lg:grid-cols-3">
+          <div class="flex flex-col justify-center border-gradient bg-black bg-opacity-70">
+            <h2 class="px-3 py-10 tracking-tight text-2xl tracking-tight text-gray-50 sm:text-2xl lg:text-4xl lg:px-5 lg:py-16 sm:leading-none text-center">
+              Farm Gardens is a stylish community with a country-style twist. A rare opportunity to live year-round in an area often considered a farming retreat destination and build a new family home in a private, gated neighbourhood within a natural, country setting.
+            </h2>
+          </div>
+
+          <div class="detailImg-1 border-gradient basis-3/4 col-span-2"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- price-plan -->
+
+    <section class="price-plan">
+      <div class="container px-5 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
+        <h2 class="mb-10 text-4xl tracking-wide text-white md:text-7xl sm:leading-none text-right">
+          Payment Plans
+        </h2>
+
+
+
+        <div class="flex flex-col lg:flex-row space-x-0 space-y-5 lg:space-y-0 lg:space-x-5 py-2 lg:py-5">
+          <div class="lg:w-1/3 p-4 lg:p-0">
+            <div class="flex flex-col justify-center h-full bg-gray-100 bg-opacity-10 px-6 py-12 overflow-hidden text-center relative border-2 border-gray-500 tracking-wide">
+              <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-50 mb-3 text-3xl md:text-5xl">On <br/> Booking</h1>
+              <p class="leading-relaxed mb-3 text-gray-50 md:text-6xl text-4xl">10%</p>
+            </div>
+          </div>
+
+          <div class="lg:w-1/3 p-4 lg:p-0">
+            <div class="flex flex-col justify-center h-full bg-gray-100 bg-opacity-10 px-6 py-12 overflow-hidden text-center relative border-2 border-gray-500 tracking-wide">
+              <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-50 mb-3 text-3xl md:text-5xl">During <br/>Construction</h1>
+              <p class="leading-relaxed mb-3 text-gray-50 md:text-6xl text-4xl">70%</p>
+            </div>
+          </div>
+
+          <div class="lg:w-1/3 p-4 lg:p-0">
+            <div class="flex flex-col justify-center h-full bg-gray-100 bg-opacity-10 px-6 py-12 overflow-hidden text-center relative border-2 border-gray-500 tracking-wide">
+              <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-50 mb-3 text-3xl md:text-5xl">On <br/> Handover</h1>
+              <p class="leading-relaxed mb-3 text-gray-50 md:text-6xl text-4xl">20%</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- TABLE -->
+        <div class="flex flex-col table-contianer">
+          <div class="border-gradient">
+            <div class="flex flex-col lg:flex-row justify-center items-center border-b border-gray-500">
+              <div class="basis-1/2 border-gray-500 text-gray-50 font-medium px-6 py-4 text-2xl md:text-3xl tracking-tight text-center">Developer</div>
+              <div class="basis-1/2 text-gray-50 tracking-tight font-light px-6 py-4 text-2xl md:text-3xl text-center">Emaar</div>
+            </div>
+
+            <div class="flex flex-col lg:flex-row justify-center items-center border-b border-gray-500">
+              <div class="basis-1/2 border-gray-500 text-gray-50 font-medium px-6 py-4 text-2xl md:text-3xl tracking-tight text-center">Approximately Completion</div>
+              <div class="basis-1/2 text-gray-50 tracking-tight font-light px-6 py-4 text-2xl md:text-3xl text-center">August 2026</div>
+            </div>
+
+            <div class="flex flex-col lg:flex-row justify-center items-center border-b border-gray-500">
+              <div class="basis-1/2 border-gray-500 text-gray-50 font-medium px-6 py-4 text-2xl md:text-3xl tracking-tight text-center">Title Type</div>
+              <div class="basis-1/2 text-gray-50 tracking-tight font-light px-6 py-4 text-2xl md:text-3xl text-center">Freehold</div>
+            </div>
+
+            <div class="flex flex-col lg:flex-row justify-center items-center border-b border-gray-500">
+              <div class="basis-1/2 border-gray-500 text-gray-50 font-medium px-6 py-4 text-2xl md:text-3xl tracking-tight text-center">Location</div>
+              <div class="basis-1/2 text-gray-50 tracking-tight font-light px-6 py-4 text-2xl md:text-3xl text-center">Dubai Water Canal</div>
+            </div>
+
+            <div class="flex flex-col lg:flex-row justify-center items-center border-b border-gray-500">
+              <div class="basis-1/2 border-gray-500 text-gray-50 font-medium px-6 py-4 text-2xl md:text-3xl tracking-tight text-center">Bed Type</div>
+              <div class="basis-1/2 text-gray-50 tracking-tight font-light px-6 py-4 text-2xl md:text-3xl text-center">4 & 5 Bed Apartments</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center items-center m-0 md:m-20 my-5">
+          <button onclick="document.getElementById('myModal').showModal()" href="/" class="bg-[#E0206D] inline-flex items-center justify-center h-12 px-10 py-5 mt-10 md:mt-0 md:px-20 md:py-10 font-medium tracking-wide text-white transition duration-200 rounded-full shadow-md hover:bg-opacity-50 focus:shadow-outline focus:outline-none text-lg md:text-3xl " aria-label="Sign up" title="Sign up">ENQUIRE NOW</button>
+
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="content-section2">
+      <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div class="grid gap-x-0 gap-y-2 lg:gap-x-5 lg:gap-y-0 lg:grid-cols-3">
+          <div class="detailImg-2 border-gradient basis-3/4 col-span-2"></div>
+          <div class="flex flex-col justify-center border-gradient bg-black bg-opacity-70">
+            <h2 class="px-3 py-10 tracking-tight text-2xl text-gray-50 sm:text-2xl lg:text-4xl lg:px-5 lg:py-16 sm:leading-none text-center">As a part of Emaar The Valley, a community of low rise & low dense homes emerges around a lush private park. This is a residential development reserved for those who enjoy the perfect things in life. Positioned nearby Al Ain Road, puts you close to Downtown Dubai</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- aminities -->
+    <section class="aminitiesSection">
+      <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
+        <h2 class="mb-10 text-4xl tracking-tight text-white md:text-7xl sm:leading-none text-right">
+          Amenities
+        </h2>
+        <div class="grid max-w-full">
+          <!-- items -->
+          <div class="flex mb-4 items-center flex-row pb-0">
+            <div class="mr-5">
+              <div class="flex items-center justify-center w-5 h-5 my-3 rounded-full md:w-8 md:h-8">
+
+                <img src="./images/check.png" alt="">
+              </div>
+            </div>
+            <div class="w-full">
+              <p class="gradient-border-buttom text-2xl md:text-3xl lg:text-4xl pb-2 text-gray-50 tracking-tight">Pocket Parks & Picnic <br class="lg:hidden block" />Area</p>
+            </div>
+          </div>
+
+          <!-- items -->
+          <div class="flex mb-4 items-center flex-row pb-0">
+            <div class="mr-5">
+              <div class="flex items-center justify-center w-5 h-5 my-3 rounded-full md:w-8 md:h-8">
+
+                <img src="./images/check.png" alt="">
+              </div>
+            </div>
+            <div class="w-full">
+              <p class="gradient-border-buttom text-2xl md:text-3xl lg:text-4xl pb-2 text-gray-50 tracking-tight">Community Centre & Outdoor <br class="lg:hidden block" />Fitness</p>
+            </div>
+          </div>
+
+          <!-- items -->
+          <div class="flex mb-4 items-center flex-row pb-0">
+            <div class="mr-5">
+              <div class="flex items-center justify-center w-5 h-5 my-3 rounded-full md:w-8 md:h-8">
+
+                <img src="./images/check.png" alt="">
+              </div>
+            </div>
+            <div class="w-full">
+              <p class="gradient-border-buttom text-2xl md:text-3xl lg:text-4xl pb-2 text-gray-50 tracking-tight">Sports Courts & Rock <br class="lg:hidden block" />Climbing</p>
+            </div>
+          </div>
+
+          <!-- items -->
+          <div class="flex mb-4 items-center flex-row pb-0">
+            <div class="mr-5">
+              <div class="flex items-center justify-center w-5 h-5 my-3 rounded-full md:w-8 md:h-8">
+
+                <img src="./images/check.png" alt="">
+              </div>
+            </div>
+            <div class="w-full">
+              <p class="gradient-border-buttom text-2xl md:text-3xl lg:text-4xl pb-2 text-gray-50 tracking-tight">Zen & Oasis <br class="lg:hidden block" />Garden</p>
+            </div>
+          </div>
+
+          <!-- items -->
+          <div class="flex mb-4 items-center flex-row pb-0">
+            <div class="mr-5">
+              <div class="flex items-center justify-center w-5 h-5 my-3 rounded-full md:w-8 md:h-8">
+
+                <img src="./images/check.png" alt="">
+              </div>
+            </div>
+            <div class="w-full">
+              <p class="gradient-border-buttom text-2xl md:text-3xl lg:text-4xl pb-2 text-gray-50 tracking-tight">Bicycle & Running <br class="lg:hidden block" />Tracks</p>
+            </div>
+          </div>
+
+          <!-- items -->
+          <div class="flex mb-4 items-center flex-row pb-0">
+            <div class="mr-5">
+              <div class="flex items-center justify-center w-5 h-5 my-3 rounded-full md:w-8 md:h-8">
+
+                <img src="./images/check.png" alt="">
+              </div>
+            </div>
+            <div class="w-full">
+              <p class="gradient-border-buttom text-2xl md:text-3xl lg:text-4xl pb-2 text-gray-50 tracking-tight">Playground & Outdoor <br class="lg:hidden block" />Gym</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location -->
+    <section id="mapSection" class="text-gray-600 body-font relative">
+
+      <div class="px-4 py-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
+        <h2 class="mb-10 text-4xl tracking-tight text-gray-50 md:text-7xl sm:leading-none text-right">
+          Map
+        </h2>
+
+      
+
+      <div class="flex flex-col items-center justify-center px-4 mx-auto sm:max-w-xl md:max-w-full md:px-0">
+        <img src="./images/THE_VALLEY_LOCATION_MAP.png" class="border-gradient w-full max-w-screen-sm mx-auto 
+        shadow-2xl md:w-auto lg:max-w-screen-xl lg:m-40 lg:my-0" alt="">
+      </div></div>
+    </section>
+
+    
+
+    <!-- image slider -->
+    <section class="image-slider">
+      <div class="px-4 pt-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
+        <h2 class="mb-10 text-4xl tracking-wide text-white md:text-7xl sm:leading-none text-right">
+         Gallery
+        </h2>
+      </div>
+
+      <div class="container-swiper swiper">
+
+
+
+        <div class="slide-container">
+          
+
+
+          <div class="card-wrapper swiper-wrapper">
+            <div class="card swiper-slide gradient-border-bg">
+              <div class="image-box">
+                <img src="./images/slider/1.jpg" alt="" />
+              </div>
+            </div>
+            <div class="card swiper-slide gradient-border-bg">
+              <div class="image-box">
+                <img src="./images/slider/2.jpg" alt="" />
+              </div>
+            </div>
+            <div class="card swiper-slide gradient-border-bg">
+              <div class="image-box">
+                <img src="./images/slider/3.jpg" alt="" />
+              </div>
+            </div>
+            <div class="card swiper-slide gradient-border-bg">
+              <div class="image-box">
+                <img src="./images/slider/4.jpg" alt="" />
+              </div>
+            </div>
+            <div class="card swiper-slide gradient-border-bg">
+              <div class="image-box">
+                <img src="./images/slider/5.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Slider-Nav-Buttons -->
+        <!-- <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div> -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+
+
+    <!-- floor map -->
+
+
+
+    <!-- whats App -->
+    <section>
+    <a href="https://wa.link/z1srr2" target="_blank" class="sticky bottom-0 right-0 p-4 float-left animate-bounce z-20">
+      <img src="https://seeklogo.com/images/W/whatsapp-icon-logo-6E793ACECD-seeklogo.com.png" alt="whats app me here" class="transition-all rounded-full w-14 hover:shadow-sm shadow-lg hover:ring-4 ring-white">
+    </a>
+  </section>
+
+
+    <!-- Footer -->
+<footer class="bg-black" aria-labelledby="footer-heading">
+  <h2 id="footer-heading" class="sr-only">Footer</h2>
+  <div class="px-5 py-12 mx-auto max-w-7xl lg:py-16 md:px-12 lg:px-20">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <div class="space-y-8 xl:col-span-1">
+        <h1 class="text-white tracking-wide text-2xl md:text-4xl">KeyMax</h1>
+      </div>
+      <div class="flex">
+        <div class="">
+          <div>
+            <h3 class="text-md font-semibold tracking-wider text-gray-50 uppercase">All Rights reserved 2022</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+
+    <script>
+      $('.video').parent().click(function () {
+  if($(this).children(".video").get(0).paused){        $(this).children(".video").get(0).play();   $(this).children(".playpause").fadeOut();
+    }else{       $(this).children(".video").get(0).pause();
+  $(this).children(".playpause").fadeIn();
+    }
+});
+    </script>
+
+    
+  </body>
+</html>
