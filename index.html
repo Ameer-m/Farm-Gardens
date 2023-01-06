@@ -74,13 +74,13 @@
           <div class="flex justify-between items-center">
             <ul class="flex justify-between items-center hidden space-x-8 lg:flex">
               <li>
-                <a href="/" aria-label="Our product" title="Our product" class="font-medium text-xl tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Location</a>
+                <a href="#mapSection" aria-label="Our product" title="Our product" class="font-medium text-xl tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Location</a>
               </li>
               <li>
-                <a href="/" aria-label="Our product" title="Our product" class="font-medium text-xl tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Amenities</a>
+                <a href="#amenities" aria-label="Our product" title="Our product" class="font-medium text-xl tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Amenities</a>
               </li>
               <li>
-                <a href="/" aria-label="Product pricing" title="Product pricing" class="font-medium text-xl tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Price</a>
+                <a href="#paymentPlan" aria-label="Product pricing" title="Product pricing" class="font-medium text-xl tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Price</a>
               </li>
             </ul>
 
@@ -156,13 +156,14 @@
                 <nav>
                   <ul class="space-y-4">
                     <li>
-                      <a href="/" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Location</a>
+                      <a href="#mapSection" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Location</a>
                     </li>
                     <li>
-                      <a href="/" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Amenities</a>
+                      <a href="#amenities" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">
+                      </a>
                     </li>
                     <li>
-                      <a href="/" aria-label="About us" title="About us" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Price</a>
+                      <a href="#paymentPlan" aria-label="About us" title="About us" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Price</a>
                     </li>
                     <li>
                       <button onclick="document.getElementById('myModal').showModal()" href="/" class="bg-[#E0206D] inline-flex items-center justify-center h-12 px-10 font-medium tracking-wide text-white transition duration-200 rounded-full shadow-md hover:bg-opacity-50 focus:shadow-outline focus:outline-none" aria-label="Sign up" title="Sign up">ENQUIRE NOW</button>
@@ -185,7 +186,7 @@
         </h1> -->
         <div class="flex md:justify-center md:items-center  w-full max-w-2xl gap-2 mx-auto mt-12 flex-col md:flex-row">
           <div class="justify-items-stretch flex-1 mt-3 sm:mt-0  border-gradient">
-            <h1 class="block md:px-6 md:py-10 px-5 py-6 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-black bg-opacity-80 lg:px-10 tracking-tight focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 text-xl md:text-2xl">Easy 80/20<br/> Payment Plan</h1>
+            <h1 class="block md:px-6 md:py-10 px-5 py-6 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-black bg-opacity-80 lg:px-10 tracking-tight focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 text-xl md:text-2xl">Payment Plan<br/> Easy 20/80</h1>
           </div>
 
           <div class="justify-items-stretch flex-1 mt-3 sm:mt-0 border-gradient">
@@ -222,7 +223,7 @@
 
     <!-- price-plan -->
 
-    <section class="price-plan">
+    <section id="paymentPlan" class="price-plan">
       <div class="container px-5 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
         <h2 class="mb-10 text-4xl tracking-wide text-white md:text-7xl sm:leading-none text-right">
           Payment Plans
@@ -273,12 +274,12 @@
 
             <div class="flex flex-col lg:flex-row justify-center items-center border-b border-gray-500">
               <div class="basis-1/2 border-gray-500 text-gray-50 font-medium px-6 py-4 text-2xl md:text-3xl tracking-tight text-center">Location</div>
-              <div class="basis-1/2 text-gray-50 tracking-tight font-light px-6 py-4 text-2xl md:text-3xl text-center">Dubai Water Canal</div>
+              <div class="basis-1/2 text-gray-50 tracking-tight font-light px-6 py-4 text-2xl md:text-3xl text-center">The Valley Dubai</div>
             </div>
 
             <div class="flex flex-col lg:flex-row justify-center items-center border-b border-gray-500">
               <div class="basis-1/2 border-gray-500 text-gray-50 font-medium px-6 py-4 text-2xl md:text-3xl tracking-tight text-center">Bed Type</div>
-              <div class="basis-1/2 text-gray-50 tracking-tight font-light px-6 py-4 text-2xl md:text-3xl text-center">4 & 5 Bed Apartments</div>
+              <div class="basis-1/2 text-gray-50 tracking-tight font-light px-6 py-4 text-2xl md:text-3xl text-center">4 & 5 Bedrooms</div>
             </div>
           </div>
         </div>
@@ -303,8 +304,8 @@
       </div>
     </section>
 
-    <!-- aminities -->
-    <section class="aminitiesSection">
+    <!-- amenities -->
+    <section id="amenities" class="aminitiesSection">
       <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
         <h2 class="mb-10 text-4xl tracking-tight text-white md:text-7xl sm:leading-none text-right">
           Amenities
@@ -319,7 +320,7 @@
               </div>
             </div>
             <div class="w-full">
-              <p class="gradient-border-buttom text-2xl md:text-3xl lg:text-4xl pb-2 text-gray-50 tracking-tight">Pocket Parks & Picnic <br class="lg:hidden block" />Area</p>
+              <p class="gradient-border-buttom text-2xl md:text-3xl lg:text-4xl pb-2 text-gray-50 tracking-tight">Children Parks & Picnic <br class="lg:hidden block" />Area</p>
             </div>
           </div>
 
@@ -499,15 +500,6 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
     <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
-
-    <script>
-      $('.video').parent().click(function () {
-  if($(this).children(".video").get(0).paused){        $(this).children(".video").get(0).play();   $(this).children(".playpause").fadeOut();
-    }else{       $(this).children(".video").get(0).pause();
-  $(this).children(".playpause").fadeIn();
-    }
-});
-    </script>
 
     
   </body>
